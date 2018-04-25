@@ -1,0 +1,1 @@
+These are my opinions about technologies I have tried. If I have not tried a thing, then I will not write about how much I love it or hate it. I also will try and preface each thing with how much time I have spent doing it.

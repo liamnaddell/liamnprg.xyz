@@ -1,0 +1,114 @@
+{
+
+  "basics": {
+    "name": "Liam Naddell",
+    "label": "Programmer",
+    "picture": "",
+    "email": "liamnprg@gmail.com",
+    "website": "https://liamnprg.xyz",
+    "summary": "Liam Naddell is a 15 year old computer programmer from North Carolina who enjoys langauges like Golang, Rust, C, and Haskell. Alongside programming langauges, I have also learned technologies like Docker and Linux distributions like Gentoo, Fedora, Centos, ArchLinux, Linux From Scratch as well as Ubuntu and Debian. ",
+    "location": {
+      "address": "12241 Danielle Christina Ct",
+      "postalCode": "Charlotte,NC 28216",
+      "city": "Charlotte",
+      "countryCode": "US",
+      "region": "North Carolina"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "liamnaddell",
+        "url": "https://github.com/liamnaddell/"
+      }
+    ]
+  },
+  "volunteer": [{
+    "organization": "Amplified Learning Center",
+    "position": "Technical Help for a Minecraft Camp",
+    "website": "http://www.amplifiedlearningcenter.com/",
+    "startDate": "March 2017",
+    "endDate": "May 2017",
+    "summary": "Amplified Learning Center is an institution focused on helping kids excel in the classroom environment.",
+    "highlights": [
+      "Write a mock-up of a Minecraft curriculum for integrating coding and fun in order to get kids interested in coding",
+      "Reimage twelve computers to Antergos linux due to the fact that the operating system that came with the computers was unable to run Minecraft in any meaningful way"
+      ]
+  }],
+  "education": [{
+    "institution": "Classical Conversations/Homeschool\nAugust 2016-present "
+  },
+  {
+    "institution": "Dual Enrollment in Belmont Abbey College\nAugust 2018",
+    "courses": [
+    ]
+  }
+  ],
+  "awards": [
+    {
+      "title": "LPI-Essentials",
+      "date": "August 2017",
+      "awarder": "Linux Professional Institute",
+      "summary": "The LPI-Essentials exam tests if participants can work their way around a Linux system. It tests the competency of the test-takers in the linux booting process, the differences between distributions, popular open source technologies as well as basic GNU utilities."
+    },
+    {
+      "title": "LPIC-1",
+      "awarder": "Linux Professional Institute",
+      "summary": "Scheduled to take the LPIC-1 exam in June 2018"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Beginner",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ]
+    },
+    {
+      "name": "Golang",
+      "level": "7/10"
+    },
+    {
+      "name": "Rust",
+      "level": "Beginner"
+    },
+    {
+      "name": "Linux",
+      "level": "8/10",
+      "keywords": [
+        "Gentoo",
+        "Debian",
+        "Centos/Fedora",
+        "Linux From Scratch",
+        "Arch Linux"
+      ] 
+    },
+    {
+      "name": "Haskell",
+      "level": "4/10"
+    },
+    {
+      "name": "Nginx",
+      "level": "4/10"
+    },
+    {
+      "name": "Docker",
+      "level": "4/10"
+    },
+    {
+      "name": "Database",
+      "level": "4/10",
+      "keywords": [
+        "Postgresql",
+        "Mongodb",
+        "mongoc",
+        "redis"
+      ]
+    }
+  ],
+  "languages": [],
+
+  "references": []
+}

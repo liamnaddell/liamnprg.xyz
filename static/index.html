@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <title>
+        {{.Title}}
+    </title>
+<body>
+    <div id='lol'>
+        <div id='sidebar'>
+            <div id='toptext'>
+                <a class='toplinks' href='/'>
+                    Main Page
+                </a>
+                <a href='/resume.html' class='toplinks'>
+                    Resume
+                </a>
+            </div>
+        </div>
+        <div id='content'>
+            <h1>
+                {{.Title}}
+            </h1>
+            <p>
+            This is a home for my projects, achievements, articles and generally a place where I can write content for the internet. 
+            </p>
+            
+            <h2>
+                What I have learned
+            </h2>
+            So far I have learned things like Golang, Html, Css, Python3, Linux, and a bit of NodeJS, Kubernetes, Xen, and Git. Here are my thoughts and experiences in these technologies to date.
+            <div>
+            <img src='img/golang.png' alt='Golang Logoz' height='42' width='42'/>
+            <h3>
+                Golang
+            </h3>
+            <p>
+            Golang was my first programming language, and it was a great introduction into programming concepts. For a few months I got nowhere in the language, but after understanding arrays, I quickly became an advanced user of the language going as far as to create applications like <a href='https://github.com/liamnaddell/LDCSP'>LDCSP</a> and <a href='https://github.com/liamnaddell/go-lmdlx'>go-mdlx</a>, a markdown lexer written in Golang that supports everything except lists. I do have a few concerns with the language, most importantly that []byte does not allow for advanced utf-8 characters.
+            </p>
+            </div>
+            <div>
+            <img src='img/python.png' alt='Python Logoz' height='42' width='42'/>
+            <h3>
+                Python3
+            </h3>
+            <p>
+            Python3 was probably my second language. I learned it due to having to write a flashcard program available <a href='https://github.com/liamnaddell/fcards-python'>here</a> for a school requirement. If I had to write a mildly advanced script, Python would be my go-to language.
+            </p>
+            </div>
+            <div>
+            <img src='img/linux.png' alt='Linux Logoz' height='42' width='42'/>
+            <h3>
+                Linux
+            </h3>
+            <p>
+            Linux was the operating system that got me into computers. In fourth grade my IT teacher had an afterschool program for installing Ubuntu on old Dell computers. That moment got me interested in Linux and computing in general. Next, he sent me an article about installing Crouton on my Chromebook so I could install Minecraft. A few years later I learned about Linux and really started becoming a Linux geek. I installed ArchLinux, Linux from Scratch, and eventually Gentoo, which is the operating system I am hosting this webpage on. I love the open nature that allows me to tinker with the operating system. It is truly amazing that you can have both an advanced toolchain environment only available on Gentoo, and an easy-to-use beginner environment of the likes of Linux Mint or Debian. I have gotten my LPI Essentials certification, and I have set up Linux on 12 low-power computers at Amplified Learning Center as a summer internship project.
+            </p>
+            </div>
+            <div>
+            <img src='img/xen.png' alt='Xen Logoz' height='42' width='42'/>
+            <h3>
+                Xen
+            </h3>
+            <p>
+                Xen is my go-to choice of industrial hypervisor due to the open source nature of the software. I have installed it by its self on Gentoo and Debian. So far, I have set up Debian domU's and alpine-Linux domU's via the command line.
+            </p>
+            </div>
+            <div>
+            <img src='img/git.png' alt='git Logoz' height='42' width='42'/>
+            <h3>
+                Git
+            </h3>
+            <p>
+            I have used Git and Github since I have started programming. I use it for everything including my schoolwork. Back at my programming school, they had this script called `save` which automatically pushed to Github with commit message 'save' so if you see old commits from me with the only message being 'save', now you know why. Recently I have wanted to explore the features of Git more, so I have started reading more manuals about it.
+            </p>
+            </div>
+            <div>
+            <img src='img/haskell.png' alt='haskell Logoz' height='42' width='42'/>
+            <h3>
+                Haskell
+            </h3>
+            <p>
+            Haskell is a high-level, purely functional language. It has no loop constructors like while, for, until, etc. The language instead relies on recursive functions to do repetition. I have completed the *Learn You a Haskell* book, and I have created a program that graphs out Collatz sequences in Haskell. That project is available <a href='https://github.com/liamnaddell/collatzGraph'>here</a>.
+            </p>
+            </div>
+            <div>
+            <img src='img/rust.png' alt='rust Logoz' height='42' width='42'/>
+            <h3>
+                Rust
+            </h3>
+            <p>
+            Rust is an imperative language with a lot of cool ideas. The biggest innovation of the Rust Programming language is not having garbage collection, or manual memory management. When a variable goes out of scope, it is free()'d. It also allows for safe pointers, abstraction en masse, and great C interoperability. It even allows for cross-compiling and multiple toolchains. My biggest program written in Rust is called rusttorial and is a program I created for helping me calculate factorials, arithmetic sequences, and combinations using the choose function. I use it for my probability course. It is available <a href='https://github.com/liamnaddell/rusttorial'>here</a>:
+            </p>
+            </div>
+            <div>
+            <img src='img/nginx.png' alt='nginx Logoz' height='42' width='42'/>
+            <h3>
+                Nginx
+            </h3>
+            <p>
+            Nginx is a simple static webserver and reverse proxy server for routing and serving webpages. It supports SSL/TLS and is supposed to be a successor to Apache. I have used NGINX for my old websites, and I have even gotten it to do SSL.
+            </p>
+            </div>
+            <div>
+            <img src='img/assembly.png' alt='assembly Logoz' height='42' width='42'/>
+            <h3>
+                Assembly
+            </h3>
+            <p>
+            Assembly is the most challenging programming language besides binary. I have programmed in multiple assembly languages from AVR to x86_64 Linux. I have written my own MBR from assembly and have manually taken a computer from 16-bit real mode to 32-bit protected mode using assembly when following a tutorial for creating my own operating system. On my github there are a few examples of my programming in assembly, they are available <a href='https://github.com/liamnaddell/Assembly'>here</a>:
+            </p>
+            </div>
+            <div>
+            <img src='img/c.png' alt='C Logoz' height='42' width='42'/>
+            <h3>
+                C
+            </h3>
+            <p>
+            C is a low-level, imperative language created in the early sixties as a successor to assembly. I have programmed in C multiple times. It is extremely challenging and extremely unsafe. My biggest projects include a kernel written in C, a fully featured guess my number program, and my most recent project, an <a href='https://github.com/liamnaddell/clue-scorecard'>ncurses clue scorecard program.</a>
+            </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
