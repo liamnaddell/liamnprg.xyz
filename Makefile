@@ -1,8 +1,8 @@
 all: sass
-	sudo go run main.go | tee logfile
+	sudo go run ./main.go | tee logfile
 
 sass: clean
-	./sass.zsh
+	./sass.sh
 
 clean:
 	rm -f static/css/*.css -v 

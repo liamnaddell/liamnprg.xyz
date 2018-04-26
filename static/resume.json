@@ -6,7 +6,7 @@
     "picture": "",
     "email": "liamnprg@gmail.com",
     "website": "https://liamnprg.xyz",
-    "summary": "Liam Naddell is a 15 year old computer programmer from North Carolina who enjoys langauges like Golang, Rust, C, and Haskell. Alongside programming langauges, I have also learned technologies like Docker and Linux distributions like Gentoo, Fedora, Centos, ArchLinux, Linux From Scratch as well as Ubuntu and Debian. ",
+    "summary": "Liam Naddell is a 15 year old computer programmer from North Carolina who enjoys languages like Golang, Rust, C, and Haskell. Alongside programming languages, I have also learned technologies like Docker and Linux distributions like Gentoo, Fedora, Centos, ArchLinux, Linux From Scratch as well as Ubuntu and Debian. ",
     "location": {
       "address": "12241 Danielle Christina Ct",
       "postalCode": "Charlotte,NC 28216",
@@ -31,7 +31,7 @@
     "summary": "Amplified Learning Center is an institution focused on helping kids excel in the classroom environment.",
     "highlights": [
       "Write a mock-up of a Minecraft curriculum for integrating coding and fun in order to get kids interested in coding",
-      "Reimage twelve computers to Antergos linux due to the fact that the operating system that came with the computers was unable to run Minecraft in any meaningful way"
+      "Re-image twelve computers to Antergos Linux due to the fact that the operating system that came with the computers was unable to run Minecraft in any meaningful way"
       ]
   }],
   "education": [{
@@ -48,7 +48,7 @@
       "title": "LPI-Essentials",
       "date": "August 2017",
       "awarder": "Linux Professional Institute",
-      "summary": "The LPI-Essentials exam tests if participants can work their way around a Linux system. It tests the competency of the test-takers in the linux booting process, the differences between distributions, popular open source technologies as well as basic GNU utilities."
+      "summary": "The LPI-Essentials exam tests if participants can work their way around a Linux system. It tests the competency of the test-takers in the Linux booting process, the differences between distributions, popular open source technologies as well as basic GNU utilities."
     },
     {
       "title": "LPIC-1",
@@ -103,8 +103,8 @@
       "keywords": [
         "Postgresql",
         "Mongodb",
-        "mongoc",
-        "redis"
+        "Mongoc",
+        "Redis"
       ]
     }
   ],
