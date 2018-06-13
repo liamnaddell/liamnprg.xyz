@@ -8,6 +8,10 @@ do
     export DIRPATH=$(dirname $file)
     export  FILENAME=$(basename $file .scss)
     echo $DIRPATH $FILENAME $file
-    sassc "${DIRPATH}/${FILENAME}".{scss,css}
+    if [ ${PREFIX} == "" ]; then
+	    sassc "${DIRPATH}/${FILENAME}".{scss,css}
+    else
+	    sassc "${PREFIX}/${DIRPATH}/${FILENAME}".scss "${PREFIX}/${DIRPATH}/${FILENAME}".css
+    fi 
 done
 

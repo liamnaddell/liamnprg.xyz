@@ -1,5 +1,5 @@
 all: sass
-	sudo go run ./main.go | tee logfile
+	sudo go run ./main.go
 
 sass: clean
 	./sass.sh

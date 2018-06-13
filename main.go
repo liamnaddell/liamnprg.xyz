@@ -9,6 +9,7 @@ import (
 	"io/ioutil"
 	"os"
 	"strings"
+	"time"
 )
 
 var views = 0
@@ -76,15 +77,21 @@ func main() {
 	var tls = true
 	var err error
 	//async tls server
-	go func(err *error) {
-		*err = fasthttp.ListenAndServeTLS(":443", "/etc/letsencrypt/live/liamnprg.xyz/fullchain.pem", "/etc/letsencrypt/live/liamnprg.xyz/privkey.pem", fastHTTPHandler)
-	}(&err)
-	fmt.Println("Is tls on? ", tls)
+	go func(ourerr *error, isTls *bool) {
+		var rr = fasthttp.ListenAndServeTLS(":443", "/etc/letsencrypt/live/liamnprg.xyz/fullchain.pem", "/etc/letsencrypt/live/liamnprg.xyz/privkey.pem", fastHTTPHandler)
+		fmt.Println(rr)
+		*ourerr = rr
+		fmt.Println(*ourerr)
+		*isTls = false
+	}(&err, &tls)
+	fmt.Println(err)
+	time.Sleep(1*time.Second)
 	if err != nil {
 		fmt.Println(err)
 		//if there is an error, tls will be disabled.
 		tls = false
 	}
+	fmt.Println("Is tls on? ", tls)
 	//no error, so redirect http to tls
 	//else only serve http
 	if tls {
