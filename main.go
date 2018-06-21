@@ -78,14 +78,13 @@ func main() {
 	var err error
 	//async tls server
 	go func(ourerr *error, isTls *bool) {
-		var rr = fasthttp.ListenAndServeTLS(":443", "/etc/letsencrypt/live/liamnprg.xyz/fullchain.pem", "/etc/letsencrypt/live/liamnprg.xyz/privkey.pem", fastHTTPHandler)
-		fmt.Println(rr)
+		var rr = fasthttp.ListenAndServeTLS("0.0.0.0:443", "/etc/letsencrypt/live/liamnprg.xyz/fullchain.pem", "/etc/letsencrypt/live/liamnprg.xyz/privkey.pem", fastHTTPHandler)
 		*ourerr = rr
-		fmt.Println(*ourerr)
 		*isTls = false
 	}(&err, &tls)
-	fmt.Println(err)
+	//we have to give the tls server a second before it can decide to err out or not. If we don't wait some time, the tls server will have errors, but not be fast enough to report them before we have already reached the if err != nil/ if tls bit
 	time.Sleep(1*time.Second)
+
 	if err != nil {
 		fmt.Println(err)
 		//if there is an error, tls will be disabled.
@@ -96,9 +95,9 @@ func main() {
 	//else only serve http
 	if tls {
 
-		err = fasthttp.ListenAndServe(":80", redirectHandler)
+		err = fasthttp.ListenAndServe("0.0.0.0:80", redirectHandler)
 	} else {
-		err = fasthttp.ListenAndServe(":80", fastHTTPHandler)
+		err = fasthttp.ListenAndServe("0.0.0.0:80", fastHTTPHandler)
 	}
 	if err != nil {
 		//if http is also broken, print error
