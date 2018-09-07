@@ -7,6 +7,7 @@ import (
 	"github.com/valyala/fasthttp"
 	"html/template"
 	"io/ioutil"
+	"time"
 	"os"
 	"strings"
 )
@@ -79,6 +80,7 @@ func main() {
 	go func(err *error) {
 		*err = fasthttp.ListenAndServeTLS(":443", "/etc/letsencrypt/live/liamnprg.xyz/fullchain.pem", "/etc/letsencrypt/live/liamnprg.xyz/privkey.pem", fastHTTPHandler)
 	}(&err)
+	time.Sleep(time.Second*2)
 	fmt.Println("Is tls on? ", tls)
 	if err != nil {
 		fmt.Println(err)
