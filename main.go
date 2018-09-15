@@ -12,6 +12,7 @@ import (
 	"strings"
 )
 
+//race condition
 var views = 0
 
 func fastHTTPHandler(ctx *fasthttp.RequestCtx) {
@@ -80,7 +81,7 @@ func main() {
 	go func(err *error) {
 		*err = fasthttp.ListenAndServeTLS(":443", "/etc/letsencrypt/live/liamnprg.xyz/fullchain.pem", "/etc/letsencrypt/live/liamnprg.xyz/privkey.pem", fastHTTPHandler)
 	}(&err)
-	time.Sleep(time.Second*2)
+	time.Sleep(time.Second*4)
 	fmt.Println("Is tls on? ", tls)
 	if err != nil {
 		fmt.Println(err)
