@@ -1,7 +1,7 @@
 {
 
   "basics": {
-    "name": "Liam Naddell",
+    "name": "Liam Naddell(FIX DATE FOR LPIC-0)",
     "label": "Programmer",
     "picture": "",
     "email": "liamnprg@gmail.com",
@@ -19,6 +19,11 @@
         "network": "Github",
         "username": "liamnaddell",
         "url": "https://github.com/liamnaddell/"
+      },
+      {
+        "network": "Gitlab",
+        "username": "liamnprg",
+        "url": "https://gitlab.com/liamnprg/"
       }
     ]
   },
@@ -26,8 +31,8 @@
     "organization": "Amplified Learning Center",
     "position": "Technical Help for a Minecraft Camp",
     "website": "http://www.amplifiedlearningcenter.com/",
-    "startDate": "March 2017",
-    "endDate": "May 2017",
+    "startDate": "2017-03-01",
+    "endDate": "2017-05-01",
     "summary": "Amplified Learning Center is an institution focused on helping kids excel in the classroom environment.",
     "highlights": [
       "Write a mock-up of a Minecraft curriculum for integrating coding and fun in order to get kids interested in coding",
@@ -46,14 +51,15 @@
   "awards": [
     {
       "title": "LPI-Essentials",
-      "date": "August 2017",
+      "date": "2017-08-01",
       "awarder": "Linux Professional Institute",
       "summary": "The LPI-Essentials exam tests if participants can work their way around a Linux system. It tests the competency of the test-takers in the Linux booting process, the differences between distributions, popular open source technologies as well as basic GNU utilities."
     },
     {
       "title": "LPIC-1",
+      "date": "2018-07-06",
       "awarder": "Linux Professional Institute",
-      "summary": "Scheduled to take the LPIC-1 exam in June 2018"
+      "summary": "The LPIC-1 is a two-part essay showing operator level knowledge in RPM and DPKG based systems. These categories cover 99% of deployed server systems. I"
     }
   ],
   "skills": [
