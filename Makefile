@@ -9,4 +9,5 @@ pyg:
 clean:
 	rm -f static/css/*.css -v 
 	rm -vf logfile
-	rm -vf static/*.gz static/img/*.gz static/css/*.gz
+	rm -vf static/code/*.html
+	find . -type f -name '*.gz' -exec rm -vf {} \;
